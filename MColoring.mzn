@@ -1,0 +1,45 @@
+int: m = 3;
+
+var 1..m: a;
+var 1..m: b;
+var 1..m: c;
+var 1..m: d;
+var 1..m: e;
+var 1..m: f;
+var 1..m: g;
+var 1..m: h;
+var 1..m: i;
+var 1..m: j;
+
+constraint a != b;
+constraint a != f;
+constraint a != c;
+constraint b != a;
+constraint b != d;
+constraint b != j;
+constraint c != a;
+constraint c != e;
+constraint c != i;
+constraint d != b;
+constraint d != e;
+constraint d != g;
+constraint e != c;
+constraint e != d;
+constraint e != h;
+constraint f != g;
+constraint f != h;
+constraint f != a;
+constraint g != f;
+constraint g != i;
+constraint g != d;
+constraint h != f;
+constraint h != j;
+constraint h != e;
+constraint i != g;
+constraint i != j;
+constraint i != c;
+constraint j != i;
+constraint j != h;
+constraint j != b;
+
+solve satisfy;
